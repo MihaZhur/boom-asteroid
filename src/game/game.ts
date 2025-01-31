@@ -46,6 +46,8 @@ export class Game {
   }
 
   initGame() {
+    console.log(`INITIALIZE GAME`);
+    
     this.root.innerHTML = '';
     this.canvasElem.innerHTML = '';
     this.root.appendChild(this.canvasElem);
