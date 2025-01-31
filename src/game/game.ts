@@ -1,5 +1,5 @@
 import { Asteroid, Bullet, Explosion, FlatingScore } from './types';
-
+import cartoonship from '/cartoonship.png';
 function calculateScore(size: number) {
   const baseScore = 100; // Базовое количество очков
   return Math.ceil(baseScore / size); // Чем меньше размер, тем больше очков
@@ -180,7 +180,7 @@ export class Game {
     }
 
     const spaceshipImage = new Image();
-    spaceshipImage.src = '/cartoonship.png'; // Путь к изображению
+    spaceshipImage.src = cartoonship; // Путь к изображению
     const drawSpaceship = () => {
       ctx.drawImage(spaceshipImage, spaceship.x, spaceship.y, 70, 70);
     };
